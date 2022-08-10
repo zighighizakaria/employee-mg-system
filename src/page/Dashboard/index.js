@@ -15,12 +15,36 @@ function Dashboard() {
   const [isAdding, setIsAdding ] = useState(false);
   const [isEditing, setIsEditing ] = useState(false);
 
-  const handleEdit = () => {
-      //
+  const handleEdit = (id) => {
+      const [employee] = employees.filter(employee => employee.id === id);
+
+      setSelectedEmployee(employee);
+      setIsEditing(true);
   }
 
-  const handleDelete = () => {
-    //
+  const handleDelete = (id) => {
+    Swal.fire({
+      icon: 'warning',
+      title: 'Êtes-vous sûr?',
+      text: "Vous ne pourrez pas revenir en arrière!",
+      showCancelButton: true,
+      confirmButtonText: 'Oui, supprimez-le !',
+      cancelButtonText: 'Non, annulez!',
+  }).then(result => {
+      if (result.value) {
+          const [employee] = employees.filter(employee => employee.id === id);
+
+          Swal.fire({
+              icon: 'success',
+              title: 'Supprimé!',
+              text: `${employee.prenom} ${employee.nom} a été supprimé.`,
+              showConfirmButton: false,
+              timer: 1900,
+          });
+
+          setEmployees(employees.filter(employee => employee.id !== id));
+      }
+   });
 }
 
   return (
@@ -32,7 +56,7 @@ function Dashboard() {
             <Header
             setIsAdding = {setIsAdding}
             />
-            <h5 style={{marginTop: "-26px"}}>La Liste Des Employés</h5>
+            <h5 style={{marginTop: "20px"}}>La Liste Des Employés</h5>
             <List 
             employees={employees}
             handleEdit={handleEdit}

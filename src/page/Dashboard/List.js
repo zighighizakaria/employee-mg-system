@@ -12,7 +12,7 @@ function List( {employees, handleEdit, handleDelete}) {
           <th>Prénom</th>
           <th>Nom</th>
           <th>Email</th>
-          <th>Salaire En MAD</th>
+          <th>Salaire (MAD)</th>
           <th>Date</th>
           <th colSpan={2} className="text-center" >Actions</th>
         </tr>
