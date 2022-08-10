@@ -56,7 +56,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
     return (
         <div className="small-container">
             <div className='header_for_edit'>
-            <h1 id="titreedit">Éditer Employee</h1>
+            <h1 id="titreedit">Éditer Un Employee</h1>
             <img id='editlogo' src={editlogo} alt='editlogo'></img>
             </div>
             <div className='forform_edit'>
