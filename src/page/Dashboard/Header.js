@@ -4,7 +4,7 @@ function Header({ setIsAdding }) {
     return (
         <header>
         <div>
-            <div >
+            <div>
             <img src={employee} alt='logo'></img>
             <h1 style={{color:"#042454"}}> EMPLOYEE MGMT</h1>
             </div>

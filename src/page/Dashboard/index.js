@@ -4,6 +4,7 @@ import Header from './Header';
 import List from './List';
 import Add from './Add';
 import Edit from './Edit';
+import Footer from './footer';
 
 
 import { employeesData} from '../../data';
@@ -56,7 +57,7 @@ function Dashboard() {
             <Header
             setIsAdding = {setIsAdding}
             />
-            <h5 style={{marginTop: "20px"}}>La Liste Des Employés</h5>
+            <div className='hea'>La Liste Des Employés</div>
             <List 
             employees={employees}
             handleEdit={handleEdit}

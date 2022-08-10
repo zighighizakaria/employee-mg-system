@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2';
+import editlogo from '../../pictures/edit.png'
+
 
 function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
 
@@ -53,8 +55,12 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
 
     return (
         <div className="small-container">
+            <div className='header_for_edit'>
+            <h1 id="titreedit">Éditer Employee</h1>
+            <img id='editlogo' src={editlogo} alt='editlogo'></img>
+            </div>
+            <div className='forform_edit'>
             <form onSubmit={handleUpdate}>
-                <h1>Edit Employee</h1>
                 <label htmlFor="prenom">Prénom</label>
                 <input
                     id="prenom"
@@ -109,6 +115,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
                     />
                 </div>
             </form>
+            </div>
         </div>
     );
 }

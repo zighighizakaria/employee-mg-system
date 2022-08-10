@@ -856,6 +856,8 @@
     background: #f04646;
     border: 1px solid #cdcdcd;
     color: white;
+    float: right;
+    margin-right: 35px;
   }
   
   .muted_delete-button:hover, .muted_delete-button:focus, .muted_delete-button:active,
@@ -877,6 +879,7 @@
     background: #619a73;
     border: 1px solid #cdcdcd;
     color: white;
+    margin-left: 35px;
 
   }
   
@@ -899,6 +902,7 @@
     border-radius: 19px;
     background-color: #f04646;
     font-size: 16px;
+    margin-left: 400px;
   }
   
   .square-button,
@@ -1071,6 +1075,112 @@
   th{
     text-align: left;
   }
+ 
+.hea{
+  background-color: #062654;
+  color:white;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Trebuchet MS';
+  font-weight:bolder;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.footer{
+  margin-top: 90px;
+}
+
+/* POUR PAGE ADD*/
+#titreajout{
+  text-align: center;
+  color: #139b52;
+}
+
+.header_for_add{
+  background-color: transparent;
+  height: 60px;
+}  
+#addlogo{
+  float: left;
+  margin-top: -70px;
+  height: 45px;
+  margin-left: 590px;
+  position: relative;
+}
+
+.forform{
+  background-color: rgb(93, 177, 107, 0.5);
+  width: auto;
+  border-radius: 12px;
+
+}
+
+input[type=text], [type=email], [type=number], [type=date]{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+    margin: auto;
+    border-radius: 3px;
+    border-color: white;
+    border-bottom: 10px;
+    width: 700px;
+    min-height: 2em;
+    max-width: 700px;
+}
+
+
+label{
+  padding-left: 35px;
+  padding-top: 30px;
+}
+
+/* POUR PAGE EDIT*/
+.header_for_edit{
+  background-color: transparent;
+  height: 60px;
+}
+
+#titreedit{
+  text-align: center;
+  color: #4364ab;
+}
+#editlogo{
+  float: left;
+  margin-top: -70px;
+  height: 45px;
+  margin-left: 590px;
+  position: relative;
+}
+
+.forform_edit{
+  background-color: rgba(80, 111, 188, 0.5);
+  width: auto;
+  border-radius: 12px;
+
+}
+
+input[type=text], [type=email], [type=number], [type=date]{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+    margin: auto;
+    border-radius: 3px;
+    border-color: white;
+    border-bottom: 10px;
+    width: 700px;
+    min-height: 2em;
+    max-width: 700px;
+}
+
+
+label{
+  padding-left: 35px;
+  padding-top: 30px;
+}
+
+
+
+
+/*///////////////////////////:*/
   /*
    * Navigation
    */

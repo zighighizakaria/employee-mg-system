@@ -3,7 +3,7 @@ import Header from './page/Dashboard/Header';
 import List from './page/Dashboard/List';
 import Dashboard from './page/Dashboard';
 import {Helmet} from "react-helmet";
-
+import Footer from './page/Dashboard/footer';
 function App() {
   return (
     <div>
@@ -13,6 +13,7 @@ function App() {
         <title>Gestion Des Employés</title>
         <link rel="canonical" href="http://mysite.com/example" />
         </Helmet>
+        <Footer/>
         
     </div>
 
