@@ -9,9 +9,9 @@ const employeesData = [
     },
     {
          id: 2,
-        prenom: 'Khalid',
-        nom: 'Kachfi',
-        email: 'kkachfi@g9.com',
+        prenom: 'Zakaria',
+        nom: 'Rojdi',
+        email: 'zrojdi@g9.com',
         salaire: '13000',
         date: '2020-05-10'
     },
@@ -49,8 +49,8 @@ const employeesData = [
     },
     {
         id: 7,
-        prenom: 'zakaria',
-        nom: 'zighighi',
+        prenom: 'Zakaria',
+        nom: 'Zighighi',
         email: 'zzighighi@g9.com',
         salaire: '3000',
         date: '2022-07-12'
