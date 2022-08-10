@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Swal from 'sweetalert2';
+import addlogo from '../../pictures/add.png'
 
 function Add({ employees, setEmployees, setIsAdding }) {
 
@@ -52,8 +53,12 @@ function Add({ employees, setEmployees, setIsAdding }) {
     return (
         
         <div className="small-container">
-            <form onSubmit={handleAdd}>
-                <h1>Add Employee</h1>
+        <div className='header_for_add'> 
+            <h1 id="titreajout">Ajouter Un Employé</h1>
+            <img id='addlogo' src={addlogo} alt='addlogo'></img>
+            </div> 
+            <div className='forform'>
+            <form onSubmit={handleAdd} action="src\data\index.js" method="get">
                 <label htmlFor="prenom">Prénom</label>
                 <input
                     id="prenom"
@@ -95,7 +100,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={date}
                     onChange={e => setDate(e.target.value)}
                 />
-                <div style={{ marginTop: '30px' }}>
+                <div className='twobtn' style={{ marginTop: '30px' }}>
                     <input type="submit" 
                         value="Ajouter" 
                         className="muted_edit-button"
@@ -109,6 +114,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     />
                 </div>
             </form>
+            </div>
         </div>
     );
 }
